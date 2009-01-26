@@ -7,3 +7,8 @@ helloworld:	hello.o
 
 hello.o:	hello.c
 	gcc -c hello.c
+
+.PHONY:	clean
+
+clean:
+	-rm -f -r *.o *~ hello
